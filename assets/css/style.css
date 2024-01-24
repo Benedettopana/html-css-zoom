@@ -12,6 +12,7 @@ img{
 body{
   /* background-color: #222222; */
   font-family: sans-serif;
+  color: white;
 }
 /* main */
 main{
@@ -56,90 +57,60 @@ main{
 
 
 /* /main */
+
 /* footer */
 footer{
   background-color: #222222;
   height: 100px;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
-  bottom: 0;
-  right: 0;
-}
 
-footer .col{
-  width: calc(100% / 3);
-}
-
-footer .container{
-  margin-top: 10px;
-  height: 90px;
-  width: 100%;
-  margin-right: 0;
-}
-
-footer .container .row{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  /* position: absolute;
-  top: -0px; */
-
+  justify-content: space-between;
 }
 
-footer nav ul,
-footer nav ul a{
+.footer-right,
+.footer-center,
+.footer-left{
+  height: 100%;
+}
+
+.footer-center,
+.footer-left{
   display: flex;
-  list-style: none;
-  color: white;
-}
-footer nav ul a{
-  display: inline-block;
-  text-decoration: none;
 
 }
 
+footer .icon{
+  height: 100%;
+  padding: 13px 10px;
 
-footer nav ul .spazio{
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
 }
 
-
-span.icona{
-  font-size: 2rem;
-  text-align: center;
+footer .icon i{
+  font-size: 1.7rem;
 }
 
-a .line{
-
-  font-size: .6rem;
-  margin: 0 30px;
+footer .icon i.fa-angle-up{
+  font-size: 1rem;
 }
 
-.end{
-  position: relative;
-  
-  
+footer .icon:hover i,
+footer .icon.active i{
+  color: green;
 }
 
-.end .box{
-  position: absolute;
-  /* left: 50%;
-  top: 200%;
-  transform: translate(-50%, -50%); */
-  left: 495px;
-  bottom: -26px;
+.footer-right button{
+  height: 100%;
+  padding: 15px;
   background-color: #4A4A4A;
-  text-align: center;
   color: red;
-  padding: 33px;
-}
-
-
-.row .sinistra{
-  position: absolute;
-  top: 0;
+  border: 0;
+  cursor: pointer;
 }
 
 /* /footer */
